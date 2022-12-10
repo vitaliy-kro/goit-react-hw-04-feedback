@@ -1,5 +1,8 @@
 import { Container, Title } from './Section.styled';
-export const Section = ({ title, children }) => {
+import React from 'react';
+import { IProps } from './SectionInterface';
+
+export const Section: React.FC<IProps> = ({ title, children }) => {
   return (
     <Container>
       <Title>{title}</Title>
